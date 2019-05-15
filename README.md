@@ -1,2 +1,7 @@
 # GekkoGui
-A graphical interface for visualizing optimization results from BYU PRISM's GEKKO package 
+> A graphical interface for BYU Prism lab's GEKKO
+
+## Requirements
+- gekko
+- websockets
+- Python 3.4+ as it uses websockets package
