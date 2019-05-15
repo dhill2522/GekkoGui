@@ -2,13 +2,20 @@ import asyncio
 from gekko import GEKKO
 import websockets
 
-print('Hi from GekkoGui!')
-
 class GekkoGui(object):
     '''A GUI for GEKKO'''
-    def test(self):
-        return('Running from', __file__)
 
+    def __init__(self, path, constants, parameters, variables, intermediates):
+        self.path = path
+        self.constants = constants
+        self.parameters = parameters
+        self.variables = variables
+        self.intermediates = intermediates
 
-def test1():
-    print('It Worked!')
+    def display(self):
+        print('Display for Gekko model found at {}'.format(self.path))
+        print('Constants: {}'.format(self.constants))
+
+    def update(self):
+        print('GekkoGui update not implmented')
+
